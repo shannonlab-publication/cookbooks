@@ -6,3 +6,6 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+package "mod_wsgi" do
+  action :install
+end
