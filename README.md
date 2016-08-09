@@ -15,7 +15,7 @@ root@server# chef-solo -o redis-2.8.17
 root@server# su - dev
 dev@server$ vi .bash_profile
 [変更前]PATH=$PATH:$HOME/bin
-[変更後]PATH=$PATH:$HOME/bin:/usr/local/Python-3.5.2/bin
+[変更後]PATH=/usr/local/Python-3.5.2/bin:$PATH:$HOME/bin
 
 dev@server$ source .bash_profile
 ```
