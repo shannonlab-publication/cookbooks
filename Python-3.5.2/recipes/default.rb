@@ -23,3 +23,12 @@ unless FileTest.exist?("/usr/local/work/Python-3.5.2.tgz") then
     EOH
   end
 end
+
+link '/usr/local/lib' do
+  to '/usr/local/Python-3.5.2/lib/libpython3.5m.so.1.0'
+end
+
+link '/usr/local/Python-3.5.2/bin/python' do
+  to '/usr/local/Python-3.5.2/bin/python3'
+end
+
