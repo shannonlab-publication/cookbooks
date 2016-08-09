@@ -24,7 +24,7 @@ unless FileTest.exist?("/usr/local/work/Python-3.5.2.tgz") then
   end
 end
 
-link '/usr/local/lib' do
+link '/usr/local/lib/libpython3.5m.so.1.0' do
   to '/usr/local/Python-3.5.2/lib/libpython3.5m.so.1.0'
 end
 
