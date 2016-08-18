@@ -12,9 +12,6 @@ root@server# chef-solo -o redis-2.8.17
 
 ## パスの追加
 ```bash
-root@server# vi /etc/ld.so.conf
-[追加]/usr/local/lib
-root@server# ldconfig
 root@server# su - dev
 dev@server$ vi .bash_profile
 [変更前]PATH=$PATH:$HOME/bin
