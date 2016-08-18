@@ -20,4 +20,10 @@ template "/etc/sshd_config" do
   mode 00600
 end
 
+template "/etc/ld.so.conf" do
+  source "/etc/ld.so.conf.erb"
+  owner "root"
+  group "root"
+  mode 00644
+end
 
