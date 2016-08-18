@@ -11,7 +11,7 @@ package "httpd-devel" do
 end
 
 cookbook_file "/tmp/mod_wsgi-4.5.5.tar.gz" do
-    source "mod_wsgi-4.5.5.tar.gz"
+    source "/tmp/mod_wsgi-4.5.5.tar.gz"
 end
 
 execute 'Install mod_wsgi' do
