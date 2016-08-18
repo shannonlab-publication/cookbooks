@@ -5,8 +5,8 @@
 root@server# cd /var/chef/
 root@server# git clone https://github.com/shannonlab-publication/cookbooks.git
 root@server# chef-solo -o base
-root@server# chef-solo -o httpd
 root@server# chef-solo -o Python-3.5.2
+root@server# chef-solo -o httpd
 root@server# chef-solo -o redis-2.8.17
 ```
 
