@@ -10,6 +10,10 @@ package "openssl-devel" do
   action :install
 end
 
+package "sqlite-devel" do
+  action :install
+end
+
 template "/etc/sudoers" do
   source "/etc/sudoers.erb"
   owner "root"
