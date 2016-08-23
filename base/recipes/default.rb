@@ -21,11 +21,10 @@ template "/etc/sudoers" do
   mode 00440
 end
 
-template "/etc/sshd_config" do
-  source "/etc/sshd_config.erb"
-  owner "root"
-  group "root"
-  mode 00600
+service "sshd"
+template "/etc/ssh/sshd_config" do
+  source "/etc/ssh/sshd_config.erb"
+  notifies :restart, "service[sshd]"
 end
 
 template "/etc/ld.so.conf" do
