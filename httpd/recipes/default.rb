@@ -33,3 +33,7 @@ template "/etc/httpd/conf.d/wsgi.conf" do
   mode 00644
 end
 
+service "httpd" do
+    action [ :enable, :start ]
+end
+

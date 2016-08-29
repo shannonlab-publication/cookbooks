@@ -32,6 +32,10 @@ link '/usr/local/Python-3.5.2/bin/python' do
   to '/usr/local/Python-3.5.2/bin/python3'
 end
 
+link '/usr/local/Python-3.5.2/bin/pip' do
+  to '/usr/local/Python-3.5.2/bin/pip3'
+end
+
 bash "ldconfig" do
   user "root"
   code <<-EOH

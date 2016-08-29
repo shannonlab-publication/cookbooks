@@ -34,3 +34,17 @@ template "/etc/ld.so.conf" do
   mode 00644
 end
 
+template "/home/dev/.bash_profile" do
+  source "/home/dev/.bash_profile.erb"
+  owner "dev"
+  group "dev"
+  mode 00644
+end
+
+template "/root/.bash_profile" do
+  source "/root/.bash_profile.erb"
+  owner "root"
+  group "root"
+  mode 00644
+end
+

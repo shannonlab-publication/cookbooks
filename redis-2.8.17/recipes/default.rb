@@ -27,7 +27,7 @@ bash "install redis-2.8.17" do
     make PREFIX=/usr/local/redis-2.8.17 install
     chown -R root:dev /usr/local/redis-2.8.17
   EOH
-  end
+end
 
 directory "/usr/local/redis-2.8.17/conf" do
   owner "root"
@@ -64,9 +64,13 @@ template "/etc/init.d/redis" do
   mode 00774
 end
 
-service "redis" do
-    supports :status => true, :restart => true
-    action [ :enable, :start ]
+#service "redis" do
+#    supports :start => true
+#    action [ :enable, :start ]
+#end
+
+bash 'service redis start' do
+  code <<-EOH
+    service redis start
+    EOH
 end
-
-
