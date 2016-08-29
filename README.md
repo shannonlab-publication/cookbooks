@@ -1,3 +1,11 @@
+# Requirement
+
+startup.sh経由で実行する必要があります。
+
+startup.shはこちらです。
+
+https://github.com/shannonlab-publication/startup-server
+
 # 設定ファイルのパス
 ## httpd
 `/etc/httpd/conf`
