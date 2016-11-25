@@ -22,3 +22,6 @@ execute 'pip install Theano' do
   command '/usr/local/Python-3.5.2/bin/pip install Theano==0.8.2'
 end
 
+execute 'pip install pandas' do
+  command '/usr/local/Python-3.5.2/bin/pip install pandas==0.18.1'
+end
