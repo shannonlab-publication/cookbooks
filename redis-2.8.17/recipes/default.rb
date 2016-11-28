@@ -64,8 +64,7 @@ template "/etc/init.d/redis" do
   mode 00774
 end
 
-bash 'service redis start' do
-  code <<-EOH
-    service redis start
-    EOH
+service "redis" do
+    supports :start => true
+    action [ :enable, :start ]
 end
