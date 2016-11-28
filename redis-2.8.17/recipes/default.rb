@@ -68,3 +68,9 @@ service "redis" do
     supports :start => true
     action [ :enable, :start ]
 end
+
+bash 'service redis start' do
+  code <<-EOH
+    service redis start
+    EOH
+end
