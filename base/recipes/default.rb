@@ -48,3 +48,7 @@ template "/root/.bash_profile" do
   mode 00644
 end
 
+service "iptables" do
+  supports :status => true, :restart => true
+  action [:disable, :stop]
+end
